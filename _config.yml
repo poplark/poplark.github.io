@@ -18,21 +18,45 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+title: poplark
+email: songkang666@126.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Hi, there!
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "https://poplark.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+# twitter_username: jekyllrb
+github_username:  poplark
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-archives
+  - jekyll-paginate
+
+# 分页
+paginate: 5
+paginate_path: "/articles/:num"
+# Post 使用的链接格式
+permalink: /:year/:month/:day/:title:output_ext
+# 显示简述
+# page_excerpts: true
+
+# 指定 Header 中页面的顺序
+header_pages:
+  # 先隐藏 archive 页面
+  # - archive.md
+  - about.md
+
+# jekyll-archives:
+#   enabled: []
+#   layout: archive
+#   permalinks:
+#     year: '/:year/'
+#     month: '/:year/:month/'
+#     day: '/:year/:month/:day/'
+#     tag: '/tag/:name/'
+#     category: '/category/:name/'
 
 # Exclude from processing.
 # The following items will not be processed, by default.
