@@ -28,7 +28,7 @@ url: "https://poplark.github.io" # the base hostname & protocol for your site, e
 github_username:  poplark
 
 # Build settings
-theme: jekyll-theme-leap-day
+theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
   - jekyll-archives
