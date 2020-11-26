@@ -2,7 +2,7 @@
 layout: post
 title: VideoTrack 的约束条件
 author: poplark
-tags: typescript plugin
+tags: webrtc MediaStreamTrack MediaStreamConstraints
 excerpt: 为啥 VideoTrack 的约束条件不生效
 ---
 
